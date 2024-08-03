@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+//import 'dotenv/config';
 import {
   Routes,
   Route,
@@ -6,17 +7,21 @@ import {
 } from 'react-router-dom';
 
 import './css/style.css';
-
 import './charts/ChartjsConfig';
 
+// Routes
+import AdminRoutes from './routes/AdminRoutes';
 // Import pages
-import Dashboard from './pages/Dashboard';
-import Customers from  './pages/Customers';
+// import Dashboard  from './pages/Dashboard';
+// import Customers from  './pages/Customers';
+// import Login from  './pages/auth/Login';
+// import ForgotPassword from  './pages/auth/ForgotPassword';
+
+//console.log(import.meta.env.VITE_API_BASE_URL);
 
 function App() {
 
   const location = useLocation();
-
   useEffect(() => {
     document.querySelector('html').style.scrollBehavior = 'auto'
     window.scroll({ top: 0 })
@@ -25,10 +30,7 @@ function App() {
 
   return (
     <>
-      <Routes>
-        <Route exact path="/" element={<Dashboard />} />
-        <Route exact path="/ecommerce/customers" element={<Customers />} />
-      </Routes>
+      <AdminRoutes></AdminRoutes>
     </>
   );
 }

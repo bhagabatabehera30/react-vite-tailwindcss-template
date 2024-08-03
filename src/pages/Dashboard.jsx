@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
+import InnerPageLoaderBox from '../partials/InnerPageLoaderBox';
 
 import Sidebar from '../partials/Sidebar';
 import Header from '../partials/Header';
@@ -36,7 +37,7 @@ function Dashboard() {
 
         {/*  Site header */}
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-
+        <Suspense fallback={<InnerPageLoaderBox />}>
         <main>
           <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
 
@@ -100,7 +101,7 @@ function Dashboard() {
 
           </div>
         </main>
-
+        </Suspense>
         <Banner />
 
       </div>
