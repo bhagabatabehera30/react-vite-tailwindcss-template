@@ -1,22 +1,13 @@
 import React, { useEffect } from 'react';
-//import 'dotenv/config';
 import {
   Routes,
   Route,
   useLocation
 } from 'react-router-dom';
-
+import './app/i18n';
 import './css/style.css';
 import './charts/ChartjsConfig';
-
-// Routes
-import AdminRoutes from './routes/AdminRoutes';
-// Import pages
-// import Dashboard  from './pages/Dashboard';
-// import Customers from  './pages/Customers';
-// import Login from  './pages/auth/Login';
-// import ForgotPassword from  './pages/auth/ForgotPassword';
-
+import GlobalRoutes from './routes/GlobalRoutes';
 //console.log(import.meta.env.VITE_API_BASE_URL);
 
 function App() {
@@ -30,7 +21,7 @@ function App() {
 
   return (
     <>
-      <AdminRoutes></AdminRoutes>
+      <GlobalRoutes></GlobalRoutes>
     </>
   );
 }

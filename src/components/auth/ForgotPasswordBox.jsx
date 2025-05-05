@@ -1,5 +1,5 @@
 import React from 'react';
-import Alert from '../Alert';
+import AlertMessage from '../AlertMessage';
 
 function ForgotPasswordBox() {
     return (
@@ -27,7 +27,7 @@ function ForgotPasswordBox() {
                 </div>
                 <div className="p-5 bg-white md:flex-1">
                     <h3 className="my-4 text-2xl font-semibold text-gray-700">Account Login</h3>
-                    <Alert type='green' message='Hi I am bhagabat'/>
+                    <AlertMessage type='green' message='Hi I am bhagabat'/>
                    <form action="#" className="flex flex-col space-y-5">
                         <div className="flex flex-col space-y-1">
                             <div className="flex items-center justify-between">
