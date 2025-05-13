@@ -5,8 +5,8 @@
 
 # npm install
 
-# npm run dev
+# npm run dev or (if vite installed npm install -g vite ) vite dev
 
-# for productoion run
+# for production run
 
 
