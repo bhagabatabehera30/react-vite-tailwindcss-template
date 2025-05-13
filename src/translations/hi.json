@@ -1,6 +1,44 @@
 {
-    "welcome": "स्वागत",
-    "hello": "नमस्ते, {{name}}!",
-    "email":"Email"
+  "buttons": {
+    "auth":{
+      "Login": "Log in",
+      "Register": "Register",
+      "Next": "Next",
+      "Logout": "Logout",
+      "Two-Factor Authentication": "Two-Factor Authentication",
+      "Verify OTP": "Verify OTP",
+      "Send OTP": "Send OTP",
+      "MFA code": "MFA code",
+      "Multi-Factor Authentication": "Multi-Factor Authentication",
+      "LoginWithMobile": "Log in with mobile"
+    }
+  },
+  "inputs": {
+    "Email": "Email",
+    "Password": "Password",
+    "Password Confirm": "Password Confirm",
+    "First Name": "First Name",
+    "Last Name": "Last Name",
+    "Phone": "Phone",
+    "Mobile Number": "Mobile Number",
+    "OTP": "OTP",
+    "Country": "Country",
+    "State": "State",
+    "City": "City",
+    "Pin Code": "Pin Code",
+    "Address": "Address",
+    "Address Line1": "Address Line1",
+    "Address Line2": "Address Line2",
+    "Name": "Name",
+    "User Name": "User Name"
+  },
+  "message":{
+    "auth": {
+      "login_account": "Sign in to your account",
+      "Remember me": "Remember me",
+      "Forgot password" : "Forgot password?",
+      "donot_have_account":"Don’t have an account yet?",
+      "register_account": "Create an account here"
+    }
   }
-  
+}
