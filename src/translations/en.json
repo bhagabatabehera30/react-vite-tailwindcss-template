@@ -34,11 +34,25 @@
   },
   "message":{
     "auth": {
+      "login_with_email": "With email and password.",
+      "login_with_otp": "With mobile and otp",
       "login_account": "Sign in to your account",
       "Remember me": "Remember me",
       "Forgot password" : "Forgot password?",
+      "ForgotPassword" : "Forgot password",
       "donot_have_account":"Don’t have an account yet?",
       "register_account": "Create an account here"
     }
+  },
+  "validation":{
+      "auth":{
+        "email":"Invalid email format",
+        "mobile":"Mobile number must be 10 digits"
+      }
+  },
+  "placeholder":{
+      "auth":{
+        "mobile":"Enter 10-digit mobile number"
+      }
   }
 }

@@ -13,7 +13,7 @@ function ForgotPasswordBox() {
                 <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                     <TopLogo></TopLogo>
                     <h3 className="text-xl font-semibold leading-tight tracking-tight text-gray-900 md:text-xl dark:text-white">
-                        {t('message.auth.login_account')}
+                        {t('message.auth.ForgotPassword')}
                     </h3>
                     <form className="space-y-4 md:space-y-6" action="#" method='post'>
                         <div className="flex flex-col space-y-1">
@@ -56,10 +56,10 @@ function ForgotPasswordBox() {
                         <div className="flex items-center justify-between">
                             <div className="flex items-start">
                             </div>
-                            <a href="/auth/forgot-password"
+                            <a href="/auth/login"
                                 className="text-sm font-medium text-primary-600 hover:underline 
                             dark:text-primary-500">
-                                {t('message.auth.Forgot password')}
+                                {t('buttons.auth.Login')}
                             </a>
                         </div>
                         <ActionButton btn_type='button'

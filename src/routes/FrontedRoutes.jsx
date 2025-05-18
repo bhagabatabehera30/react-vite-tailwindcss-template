@@ -19,7 +19,7 @@ function FrontedRoutes() {
                 <Route exact path="/" element={<Login />} />
                 <Route path="/auth">
                     <Route exact path="login" element={<Login />} />
-                    <Route exact path="login-with-otp" element={<LoginWithMobile />} />
+                    {/* <Route exact path="login-with-otp" element={<LoginWithMobile />} /> */}
                     <Route exact path="forgot-password" element={<ForgotPassword />} />
                     <Route exact path="register" element={<Register />} />
                 </Route>
